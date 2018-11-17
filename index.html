@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tap out</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+<div class="main">
+        <h2 class="topSection aboveSection">Tap out</h2>
+    <div  class="gameSection startButton">
+        <div class="button"><h1>Enter Stage Area</h1></div>
+    </div>
+    <section class="gameScreen gameBox">
+        <div class="counter countDown reset"></div>
+        <div  data-to-move="0" class="character1 characterOne"></div>
+        <div  data-to-move="0" class="character2 characterTwo"></div>
+        <div  class="finishLine end"></div>
+    </section>
+    <section class="scoreSection">
+        <div class="instructions">Instructions:
+            Player 1 hit "A" to move.<p></p>
+            Player 2 hit "L" to move.
+        </div>
+        <div class="scoreBox timer"> player one
+            0:00</div>
+        <div class="scoreBox timer2"> player two
+            0:00</div>
+    </section>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+<script src="startButton.js"></script>
+<script src="move.js"></script>
+</html>
